@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function Focus(ele){
+            console.log(ele);
+        }
+        function Blur(ele){
+            console.log(ele);
+        }
+        function Select(ele){
+            alert("Select Event is fired..")
+            console.log(ele);
+        }
+        function changeCity(val){
+            alert(val)
+        }
+    </script>
+</head>
+<body class="container-fluid">
+    <form>
+        <dl>
+            <dt>User Name</dt>
+            <dd>
+                <input type="text" class="form-control w-25" id="Name" name="userName" onfocus="Focus(this)">
+            </dd>
+            <dt>Email</dt>
+            <dd>
+                <input type="email" class="form-control w-25" id="Email" name="userEmail" onblur="Blur(this)">
+            </dd>
+            <dt>Mobile</dt>
+            <dd>
+                <input type="number" class="form-control w-25" id="Mobile" name="userMobile" onselect="Select(this)">
+            </dd>
+        </dl>
+        <select id="state" onchange="changeCity(this.value)" class="form-select-sm">
+            <option>--Select States--</option>
+            <option id="bang" class="form-check-input">Bangalore</option>
+            <option id="hyd" class="form-check-input">Hyderbad</option>
+            <option id="del" class="form-check-input">Delhi</option>
+            <option id="goa" class="form-check-input">Goa</option>
+        </select>
+        <br><br>
+        <button class="btn btn-primary" id="submit">Submit</button>
+        <button class="btn btn-primary" id="Reset">Reset</button>
+    </form>
+</body>
+</html>

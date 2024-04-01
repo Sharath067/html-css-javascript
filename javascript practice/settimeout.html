@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(){
+            document.querySelector("p").innerHTML = "First";
+        }
+        function f2(){
+            document.querySelector("p").innerHTML = "Second";
+        }
+        function f3(){
+            document.querySelector("p").innerHTML = "Third";
+        }
+        var a,b,c;
+        function bodyload(){
+            a = setTimeout(f1,3000);
+            b = setTimeout(f2,5000);
+            c = setTimeout(f3,10000);
+        }
+        function CancelClick(){
+            clearTimeout(b);
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <button onclick="CancelClick()">Cancel F2</button>
+    <p align="center"></p>
+</body>
+</html>

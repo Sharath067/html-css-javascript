@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <title>Document</title>
+</head>
+<body>
+  <button class="btn btn-primary m-5" id="btn">Load Data</button>
+  <div id="data"></div>
+
+  <script>
+    let btn = document.getElementById("btn");
+    let data = document.getElementById("data");
+    //btn.addEventListener("click",loadData);
+    btn.onclick = loadData();
+
+    function loadData() {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', 'a.txt', true);
+
+        xhr.onprogress = function () {
+            data.innerText = "Loading........";
+        };
+
+        xhr.onload = function () {
+
+                data.innerText = xhr.responseText;
+           
+        };
+
+        xhr.send();
+    }
+</script>
+</body>
+</html>

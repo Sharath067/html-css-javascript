@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+      
+       .first ul, .first li{
+        margin: 0;
+        padding: 0;
+       }
+       .first ul{
+        background: white;
+        list-style: none;
+        width: 100%;
+       }
+       .first li{
+        float: left;
+        position: relative;
+        width: auto;
+       }
+       .first a{
+        background: white;
+        color: black;
+        display: block;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: arial;
+        padding: 15px 55px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.2s ease;
+       }
+       .first li:hover a{
+        color: lightcoral;
+       }
+       .second {
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 30px;
+        visibility: hidden;
+        z-index: 1;
+       }
+       li:hover ul.second{
+        opacity: 1;
+        visibility: visible;
+        top: 50px;
+       }
+       .second li{
+        width: 125%;
+       }
+       .sec{
+        border-radius: 1px solid gray;
+       }
+       
+    </style>
+</head>
+<body>
+    <nav class="first">
+        <ul>
+            <li><a href="">Home</a>
+                <div class="sec">
+                    <ul class="second">
+                        <li><a href="">Default</a></li>
+                        <li><a href="">Classic</a></li>
+                        <li><a href="">Fashion</a></li>
+                        <li><a href="">Boxed</a></li>
+                        <li><a href="">Simple</a></li>
+                        <li><a href="">Asymmetric</a></li>
+                        <li><a href="">Sidenav</a></li>
+                        <li><a href="">Landing</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Catalog</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Docs</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

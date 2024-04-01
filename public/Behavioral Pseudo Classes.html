@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        li::before{
+            content: ">>";
+        }
+        li:first-child::before{
+            content: "";
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Flipkart</li>
+        <li>Electronics</li>
+        <li>mobiles</li>
+        <li>one plus</li>
+        <li>10 pro</li>
+    </ul>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::selection{
+            background-color: yellow;
+            text-decoration: underline 1px dotted;
+        }
+    </style>
+</head>
+<body>
+    <p>HTML is a Hyper Text Mark Up Language.</p>
+</body>
+</html>

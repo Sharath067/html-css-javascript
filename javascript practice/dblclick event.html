@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ViewImage(){
+            window.open("image/onebl.jpg","Oneplus","width=300 height=400");
+        }
+        document.oncontextmenu = function(){
+            alert(`Right click not allowed`);
+            return false;
+        }
+        document.onselectstart = function(){
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <p>Right click and selection disabled</p>
+    <img src="image/onebl.jpg" width="200px" height="200px" ondblclick="ViewImage()">
+    <p>Double click to view image</p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <style>
+        .topic {
+            width: 200px;
+            box-shadow: 2px 2px 2px gray;
+            padding: 5px;
+            border:1px solid gray;
+            margin: 10px;
+        }
+        .topic:target {
+            background-color: black;
+            color:white;
+            border-radius: 100px;
+            height: 200px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        li {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">JavaScript</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="topic" id="html">
+            <h2>HTML</h2>
+            <p>It is a markup language.</p>
+        </div>
+        <div class="topic" id="css">
+            <h2>CSS</h2>
+            <p>It defines styles</p>
+        </div>
+        <div class="topic" id="js">
+            <h2>JavaScript</h2>
+            <p>It manipulates DOM.</p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function DisplayAd2(){
+            document.getElementById("pic").src="image/bus.jpg";
+        }
+        function DisplayAd1(){
+            document.getElementById("pic").src = "image/flight.jpg";
+        }
+    </script>
+</head>
+<body>
+     <img onmousedown="DisplayAd2()" onmouseup="DisplayAd1()" src="image/flight.jpg" id="pic">
+     <p>hold down mouse button</p>
+</body>
+</html>

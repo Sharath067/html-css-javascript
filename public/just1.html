@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Histogram Animation</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #container {
+      position: relative;
+      width: 520px;
+      height: 300px;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    .bar {
+      position: absolute;
+      bottom: 0;
+      width: 100px;
+      margin-right:50px;
+      height: 0;
+      transition: height 0.7s ease-in-out;
+    }
+
+    #startBtn {
+        margin-right: 30px;
+        background-color: rgb(17, 105, 17);
+        border-color: rgb(17, 105, 17);
+        width:80px;
+        height:30px;
+        color: white;
+        border-radius: 5px;;
+      cursor: pointer;
+    }
+    #stopBtn{
+        margin-right: 30px;
+        background-color: rgb(167, 88, 241);
+        border-color: rgb(167, 88, 241);
+        width:80px;
+        height:30px;
+        color: white;
+        border-radius: 5px;;
+      cursor: pointer;
+    }
+    #resetBtn{
+        margin-right: 30px;
+        background-color: rgb(211, 68, 68);
+        border-color: rgb(211, 68, 68);
+        width:80px;
+        height:30px;
+        color: white;
+        border-radius: 5px;;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="bar" style="left: 10px; background-color: rgb(167, 88, 241);"></div>
+    <div class="bar" style="left: 110px; background-color: rgb(175, 73, 107);"></div>
+    <div class="bar" style="left: 210px; background-color: indianred;"></div>
+    <div class="bar" style="left: 310px; background-color: rgb(226, 147, 78);"></div>
+    <div class="bar" style="left: 410px; background-color: rgb(207, 207, 50);"></div>
+  </div>
+  <br><br>
+  <div>
+        <button id="startBtn" onclick="startAnimation()">Start</button>
+        <button id="stopBtn" onclick="stopAnimation()">Stop</button>
+        <button id="resetBtn" onclick="resetAnimation()">Reset</button>
+  </div>
+  <script>
+    let animationInterval;
+
+    function startAnimation() {
+      const bars = document.querySelectorAll('.bar');
+      let height = 0;
+
+      animationInterval = setInterval(() => {
+        bars.forEach(bar => {
+          height = Math.floor(Math.random() * 400) + 1; // Random height between 1 and 400
+          bar.style.height = `${height}px`;
+        });
+      }, 1000);
+    }
+
+    function stopAnimation() {
+      clearInterval(animationInterval);
+    }
+
+    function resetAnimation() {
+      const bars = document.querySelectorAll('.bar');
+      bars.forEach(bar => {
+        bar.style.height = '400px';
+      });
+      clearInterval(animationInterval);
+    }
+  </script>
+</body>
+</html>

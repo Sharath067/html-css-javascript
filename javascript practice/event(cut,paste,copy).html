@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Cut(){
+            document.querySelector("p").innerHTML = "Removed and Copied to Clipboard";
+        }
+        function Copy(){
+            document.querySelector("p").innerHTML = "Copied to Clipboard";
+        }
+        function Paste(){
+            document.querySelector("p").innerHTML = "Inserted from Clipboard";
+        }
+    </script>
+</head>
+<body>
+    <textarea oncut="Cut()" oncopy="Copy()" onpaste="Paste()" row="4" cols="40"></textarea>
+    <p></p>
+</body>
+</html>

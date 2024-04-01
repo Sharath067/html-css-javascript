@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Shopping</title>
+    <style>
+        header{
+            display: flex;
+            font-weight: bold;
+            font-family: arial;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .a{
+            font-family: arial;
+            font-size: 25px;
+        }
+        .first ul, .first li{
+        margin: 0;
+        padding: 0;
+       }
+       .first ul{
+        background: white;
+        list-style: none;
+        width: 100%;
+       }
+       .first li{
+        float: left;
+        position: relative;
+        width: auto;
+       }
+       .first a{
+        background: white;
+        color: black;
+        display: block;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: arial;
+        padding: 15px 55px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.2s ease;
+       }
+       .first li:hover a{
+        color: lightcoral;
+       }
+       .second {
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 30px;
+        visibility: hidden;
+        z-index: 1;
+       }
+       li:hover ul.second{
+        opacity: 1;
+        visibility: visible;
+        top: 50px;
+       }
+       .second li{
+        width: 100%;
+       }
+       .sec{
+        border-radius: 1px solid gray;
+       }
+        .b span{
+            margin-right: 15px;
+        }
+        article{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .bi-lightning-fill{
+            color: yellow;
+        }
+        section{
+            margin-top: 400px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 30px;
+           display: grid;
+           grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        }
+        .c{
+            font-family: arial;
+            font-weight: bold;
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+        .c~div span{
+            margin-right: 15px;
+            font-size: 20px;
+            color: gray;
+        }
+        .d{
+            font-family: Arial;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .d~span{
+            font-family: arial;
+            margin-bottom: 15px;
+            display: block;
+            color: gray;
+        }
+        address span{
+            display:block;
+            margin-bottom:15px;
+            font-family: arial;
+            color: gray;
+        }
+        aside{
+            position: fixed;
+            bottom: 250px;
+            right: 8.5px;
+            background-color: white;
+            width: 30px;
+        }
+        aside span{
+            display: block;
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 20px;
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="a">Shopper.</span>
+        </div>
+        <nav class="first">
+            <ul>
+                <li><a href="">Home</a>
+                    <ul class="second">
+                        <li><a href="">Default</a></li>
+                        <li><a href="">Classic</a></li>
+                        <li><a href="">Fashion</a></li>
+                        <li><a href="">Boxed</a></li>
+                        <li><a href="">Simple</a></li>
+                        <li><a href="">Asymmetric</a></li>
+                        <li><a href="">Sidenav</a></li>
+                        <li><a href="">Landing</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Catalog</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Docs</a></li>
+            </ul>
+        </nav>
+        <div class="b">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart4"></span>
+        </div>
+    </header>
+    <article>
+        <span class="bi bi-lightning-fill"></span>
+        <span> HAPPY HOLIDAY DEALS ON EVERYTHING </span>
+        <span class="bi bi-lightning-fill"></span>
+    </article>
+    <aside>
+        <span class="bi bi-facebook"></span>
+        <span class="bi bi-instagram"></span>
+        <span class="bi bi-twitter"></span>
+        <span class="bi bi-whatsapp"></span>
+        <span class="bi bi-search"></span>
+    </aside>
+    <section>
+        
+    </section>
+    <footer>
+        <div>
+            <div class="c">Shopper.</div>
+            <div>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+            </div>
+        </div>
+        <div>
+            <div class="d">SUPPORT</div>
+            <span>Contact Us</span>
+            <span>FAQs</span>
+            <span>Size Guide</span>
+            <span>Shipping & Returns</span>
+        </div>
+        <div>
+            <div class="d">SHOP</div>
+            <span>Men's Shopping</span>
+            <span>Women's Shopping</span>
+            <span>Kids' Shopping</span>
+            <span>Discounts</span>
+        </div>
+        <div>
+            <div class="d">COMPANY</div>
+            <span>Our Story</span>
+            <span>Careers</span>
+            <span>Terms & Conditions</span>
+            <span>Privacy & Cookie policy</span>
+        </div>
+        <div>
+            <div class="d">CONTACT</div>
+            <address>
+                <span>1-202-555-0105</span>
+                <span>1-202-555-0106</span>
+                <span>help@shopper.com</span>
+            </address>   
+        </div>
+    </footer>
+</body>
+</html>

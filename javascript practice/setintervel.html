@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        var count = 0;
+        function Loading(){
+            count++;
+            document.getElementById("status").innerHTML = `${count} % Completed`;
+            if(count==100){
+                document.getElementById("loadingContainer").style.display = "none";
+                document.getElementById("imageContainer").style.display = "block";
+            }
+        }
+        function LoadImageClick(){
+            document.getElementById("btnContainer").style.display = "none";
+            document.getElementById("loadingContainer").style.display = "block";
+            setInterval(Loading,200);
+        }
+    </script>
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div>
+       <div id="btnContainer">
+        <button class="btn btn-primary" onclick="LoadImageClick()">Load Image</button>
+       </div>
+       <div id="loadingContainer" style="display: none;" class="text-center">
+          <div class="spinner-border text-success"></div>
+          <div id="status"></div>
+       </div>
+       <div id="imageContainer" style="display: none;">
+          <img src="image/abd.jpg" width="300" height="400">
+       </div>
+    </div>
+</body>
+</html>

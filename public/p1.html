@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Myresume</title>
+    <style>
+        body{
+            background-size: cover;
+            background-position: fixed;
+        }
+        
+        .shade{
+            background-color: rgba(255,255,255,0.6);
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        
+        .hv {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .hv::before 
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #666;
+            border-radius: inherit;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        .hv:hover::before 
+        {
+            opacity: 0.7;
+        }
+        aside
+        {
+            width: 40px;
+            padding: 10px;
+            position: fixed;
+            top: 10px;
+        }
+        .sliding-name 
+        {
+            white-space: nowrap;
+            overflow: hidden; 
+        }
+
+        .letter 
+        {
+            display: inline-block;
+            transform: translateX(100%); 
+            animation: slide 20s forwards; 
+        }
+
+        @keyframes slide {
+            to {
+                transform: translateX(0); 
+            }
+        }
+        .name{
+            font-size: 60px;
+            font-family: arial;
+            font-weight: bold;
+            padding: 10px;
+            padding-top: 15%;
+            text-align: center;
+            margin-right: 15%;
+            color:#666;
+        }
+        .a{
+            font-size: 25px;
+            font-family: arial;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-right: 31%;
+        }
+        .b{
+            color: #007bff;
+            
+        }
+        .c{
+            margin-top: 70px;
+        }
+        .c button{
+            
+            margin-right: 4%;
+            
+        }
+        .about{
+            font-size: 30px;
+            font-family: arial;
+            font-weight: bold;
+            text-align: center;
+    
+        }
+    </style>
+</head>
+<body background="image/hero-bg.jpg">
+    <div class="shade">
+        <header>
+
+        </header>
+        <section>
+            <main>
+                <div  class="name" ><div class="sliding-name">
+                    <span class="letter">Brandon</span>
+                    <span class="letter"></span>
+                    <span class="letter">Johnson</span>
+                  </div>
+                <div class="a">
+                    <span class="letter">I'm</span>
+                    <span class="letter"></span>
+                    <span class="letter"></span>
+                    <span class="letter"><span class="b">Developer</span></span>
+                    
+                </div>
+                <div class="c">
+                    <button class="hv"><span class="bi bi-twitter"></span></button>
+                    <button class="hv"><span class="bi bi-facebook"></span></button>
+                    <button class="hv"><span class="bi bi-instagram"></span></button>
+                    <button class="hv"><span class="bi bi-skype"></span></button>
+                    <button class="hv"><span class="bi bi-google"></span></button>
+                </div>
+                <aside>
+                    <button class="hv">
+                        <span class="bi bi-house"></span>
+                    </button>
+                    <button class="hv">
+                        <span class="bi bi-person"></span>
+                    </button>
+                    <button class="hv">
+                        <span class="bi bi-file-earmark"></span>
+                    </button>
+                    <button class="hv">
+                        <span class="bi bi-credit-card-fill"></span>
+                    </button>
+                    <button class="hv">
+                        <span class="bi bi-house"></span>
+                    </button>
+                    <button class="hv">
+                        <span class="bi bi-envelope"></span>
+                    </button>
+                </aside>
+                </div>
+            </main>
+        </section>
+    </div>
+    
+    <footer>
+        
+    </footer>
+</body>
+</html>

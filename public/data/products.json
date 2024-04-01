@@ -1,0 +1,54 @@
+[
+    {
+        "title" : "OnePlus 10 Pro 5G (Volcanic Black, 128 GB)",
+        "image" : "image/onebl.jpg",
+        "rating" : {"rate":4.1, "rated":394, "review":17},
+        "features" : [
+            "8 GB RAM | 128 GB ROM",
+            "17.02 cm (6.7 inch) Display",
+            "48MP Rear Camera | 32MP Front Camera",
+            "5000 mAh Battery",
+            "1 Year Manufacturer Warranty for Handset and 6 Months Warranty for In the Box Accessories"
+        ],
+        "price":59999
+    },
+    {
+        "title" : "OnePlus 10 Pro 5G (Volcanic Blue, 128 GB)",
+        "image" : "image/onebl.jpg",
+        "rating" : {"rate":4.1, "rated":394, "review":17},
+        "features" : [
+            "8 GB RAM | 128 GB ROM",
+            "17.02 cm (6.7 inch) Display",
+            "48MP Rear Camera | 32MP Front Camera",
+            "5000 mAh Battery",
+            "1 Year Manufacturer Warranty for Handset and 6 Months Warranty for In the Box Accessories"
+        ],
+        "price":59999
+    },
+    {
+        "title" : "Iphone ( Black, 128 GB)",
+        "image" : "image/iphoneblack.jpg",
+        "rating" : {"rate":4.1, "rated":394, "review":17},
+        "features" : [
+            "8 GB RAM | 128 GB ROM",
+            "17.02 cm (6.7 inch) Display",
+            "48MP Rear Camera | 32MP Front Camera",
+            "5000 mAh Battery",
+            "1 Year Manufacturer Warranty for Handset and 6 Months Warranty for In the Box Accessories"
+        ],
+        "price":59999
+    },
+    {
+        "title" : "Iphone ( Blue, 128 GB)",
+        "image" : "image/iphoneblue.jpg",
+        "rating" : {"rate":4.1, "rated":394, "review":17},
+        "features" : [
+            "8 GB RAM | 128 GB ROM",
+            "17.02 cm (6.7 inch) Display",
+            "48MP Rear Camera | 32MP Front Camera",
+            "5000 mAh Battery",
+            "1 Year Manufacturer Warranty for Handset and 6 Months Warranty for In the Box Accessories"
+        ],
+        "price":59999
+    }
+]

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function CityChange(){
+            frmMovies.submit();
+        }
+    </script>
+</head>
+<body>
+    <form name="frmMovies">
+        <dl>
+            <dt>User Name</dt>
+            <dd><input type="text" name="UserName"></dd>
+            <dt>City</dt>
+            <dd>
+                <select onchange="CityChange()" name="City">
+                    <option>Select City</option>
+                    <option>Delhi</option>
+                    <option>Hyd</option>
+                </select>
+            </dd>
+        </dl>
+    </form>
+</body>
+</html>

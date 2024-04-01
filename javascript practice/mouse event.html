@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        marquee {
+            padding: 100px;
+        }
+        img:hover {
+            transform: scale(2);
+            box-shadow: 4px 4px 2px black;
+            transition: 2s;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <marquee scrollamount="20" onmouseover="this.stop()" onmouseout="this.start()">
+        <img src="image/flight.jpg" width="100" height="100">
+        <img src="image/bus.jpg" width="100" height="100">
+        <img src="image/oneb.jpg" width="100" height="100">
+        <img src="image/onebl.jpg" width="100" height="100">
+
+    </marquee>
+</body>
+</html>

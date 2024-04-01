@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function InputClick(){
+           var password = document.getElementById("txtPwd").value;
+           var regExp = /(?=.*[A-Z])\w{4,15}/;
+           var pwdError = document.getElementById("pwdError");
+           if(password.match(regExp)){
+            pwdError.innerHTML = "Strong password".fontcolor(`green`);
+            SetMeter(1,100,100);
+           }
+           else{
+            if(password.length<4)
+            {
+                pwdError.innerHTML = "Poor password min 4 chars should be present".fontcolor(`red`);
+                SetMeter(1,100,30);
+            }
+            else{
+                pwdError.innerHTML = "Week password first letter should be capital".fontcolor(`gold`);
+                SetMeter(1,100,60);
+            }
+           }
+        }
+
+        function SetMeter(min,max,value){
+            var status = document.getElementById("status");
+            status.min = min;
+            status.max = max;
+            status.value = value;
+        }
+    </script>
+    <style>
+        meter{
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Enter your password</dt>
+        <dd>
+            <input type="text" id="txtPwd" onkeyup="InputClick()">
+        </dd>
+        <dd>
+            <meter id="status" min="1" max="100" value="1"></meter>
+        </dd>
+        <dd id="pwdError"></dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Mobile:valid+div {
+            display: none;
+        }
+        .Mobile:invalid+div {
+            display: block;
+            color:red;
+        }
+        .UserName:valid+div {
+            display: none;
+        }
+        .UserName:invalid+div {
+            display: block;
+            color:red;
+        }
+        .Mobile:invalid {
+            border:2px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+        .Mobile:valid {
+            border:2px solid green;
+            box-shadow: 2px 2px 2px green;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <dl>
+            <dt>User Name</dt>
+            <dd>
+                <input type="text" name="UserName" class="UserName" required>
+                <div>User Name Required</div>
+            </dd>
+            <dt>Your Mobile</dt>
+            <dd>
+                <input type="text" class="Mobile" placeholder="eg: +(1)(425) 555-0100" pattern="\+\(1\)\(\d{3}\)\s\d{3}-\d{4}" name="str"> 
+                <div>Invalid Mobile : US Mobile Format +(1)(425) 555-0100</div>
+            </dd>
+        </dl>
+        
+        <button>Submit</button>
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <form align="center">
+        <h1>Google</h1>
+        <input type="text" name="searchTerm" size="40" list="terms">
+        <datalist id="terms">
+            <option>JavaScript Tutorial</option>
+            <option>CSS Examples</option>
+            <option>JavaScript Project</option>
+            <option>HTML Examples</option>
+            <option>HTML Project</option>
+            <option>HTML Tutorial</option>
+            <option>CSS Tutorial</option>
+        </datalist>
+        <p>
+            <button>Search</button>
+        </p>
+    </form>
+</body>
+</html>

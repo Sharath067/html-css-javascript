@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #main-1{
+        border-radius: 0px 0px;
+        background-color: rgb(17,14,14);
+        border-radius: 20px;
+    }
+    #row-1{
+        height: 100px;
+        background-color: white;
+        color: black;
+        padding: 30px;
+        font-weight: bold;
+        font-size: 40px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    #row #result{
+        
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #main-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #row-2{
+        margin: 2px;
+    }
+    #row-3{
+        margin: 2px;
+    }
+    #row-4{
+        margin: 2px;
+    }
+    #row-5{
+        margin: 2px;
+    }
+    button{
+        border-radius: 50%;
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+    button:hover{
+        background-color: skyblue;
+    }
+    button:active{
+        background-color: lightgreen;
+    }
+   
+    </style>
+   
+</head>
+<body>
+    <div id="main-1">
+        <div id="row-1">
+            <p id="result">0</p>
+        </div>
+        <div id="main-2">
+            <div id="row-2">
+                <button>C</button>
+                <button>DEL</button>
+                <button>%</button>
+                <button>/</button>
+            </div>
+            <div id="row-3">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>*</button>
+            </div>
+            <div id="row-4">
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>-</button>
+            </div>
+            <div id="row-5">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>+</button>
+            </div>
+            <div id="row-6">
+                <button>00</button>
+                <button>0</button>
+                <button>.</button>
+                <button style="background-color: orangered;">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/calculator.js">console.log("6767")</script>
+</body>
+</html>

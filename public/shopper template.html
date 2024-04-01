@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper Template</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .brand-title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        header {
+            font-size: 23px;
+            font-family: Arial;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        nav span {
+            margin-right: 20px;
+        }
+        .shortcut-buttons span {
+            margin-right: 20px;
+        }
+        article {
+            background-color: black;
+            font-size: 18px;
+            padding: 10px;
+            color:white;
+            text-align: center;
+        }
+        .bi-lightning-fill {
+            color:gold;
+        }
+       
+        footer {
+            background-color: black;
+            padding: 20px;
+            color:white;    
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        }
+        .footer-title {
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: Arial;
+        }
+        .footer-brand-title {
+            font-size: 30px;
+            font-family: Arial;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .footer-title~span {
+            display: block;
+            margin-bottom: 15px;
+            font-family: Arial;
+        }
+        address span {
+            display: block;
+            margin-bottom: 15px;
+            font-family: Arial;
+        }
+        .footer-brand-title~div span {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            grid-gap: 5px;
+            margin-top: 10px;
+        }
+        .men, .women, .kids {
+            height: 450px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .women {
+            background-image: url("image/flight.jpg");
+        }
+        .men {
+            background-image:  url("image/train.jpg");
+        }
+        .kids {
+            background-image: url("image/bus.jpg");
+        }
+
+        .title {
+            font-size: 45px;
+            color:white;
+            text-shadow: 2px 2px 2px black;
+        }
+        button {
+            width: 150px;
+            font-size: 15px;
+        }
+        .features {
+            margin-top: 20px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            font-family: Arial;
+        }
+        .features .bi {
+            color:red;
+        }
+        .features div {
+            margin-bottom: 10px;
+        }
+        .feature-text {
+            color:gray;
+        }
+        .site-main {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .site-main-title {
+            font-size: 40px;
+            font-family: Arial;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .site-main-subtitle {
+            color:gray;
+        }
+        .site-main-text {
+            font-family: Arial;
+            width: 500px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+   <header>
+       <div>
+        <span class="brand-title">Shopper</span>
+       </div>
+       <nav>
+        <span>Home</span>
+        <span>Shop</span>
+        <span>Pages</span>
+        <span>Catalog</span>
+        <span>Blog</span>
+        <span>Docs</span>
+       </nav>
+       <div class="shortcut-buttons">
+          <span class="bi bi-search"></span>
+          <span class="bi bi-person"></span>
+          <span class="bi bi-heart"></span>
+          <span class="bi bi-cart3"></span>
+       </div>
+   </header>
+   <article>
+        <span class="bi bi-lightning-fill"></span>
+        <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+        <span class="bi bi-lightning-fill"></span>
+   </article>
+   <section>
+        <main>
+            <div class="women">
+                <div>
+                    <h1 class="title">Women</h1>
+                    <button>Shop Women <span class="bi bi-arrow-right"></span> </button>
+                </div>
+            </div>
+            <div class="men">
+                <div>
+                    <h1 class="title">Men</h1>
+                    <button>Shop Men <span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+            <div class="kids">
+                <div>
+                    <h1 class="title">Kids</h1>
+                    <button>Shop Kids <span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+        </main>
+        <div class="features">
+            <div>
+                <div>
+                    <span class="bi bi-truck"></span> FREE SHIPPING
+                </div>
+                <div class="feature-text">
+                    From all orders over $100
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span class="bi bi-arrow-repeat"></span> FREE RETURNS
+                </div>
+                <div class="feature-text">
+                    Return money within 30 days
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span class="bi bi-lock"></span> SECURE SHOPPING
+                </div>
+                <div class="feature-text">
+                    You're in safe hands
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span class="bi bi-tag"></span> OVER 10,000 STYLES
+                </div>
+                <div class="feature-text">
+                    We have everything you need
+                </div>
+            </div>
+        </div>
+        <div class="site-main">
+           <div>
+             <div class="site-main-subtitle">NEW COLLECTION</div>
+             <div class="site-main-title">Best Picks 2019</div>
+             <div class="site-main-text">
+                Appear, dry there darkness they're seas, dry waters thing fly midst. Beast, above fly brought Very green.
+             </div>
+           </div>
+        </div>
+   </section>
+   <footer>
+        <div>
+            <div class="footer-brand-title">Shopper</div>
+            <div>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+            </div>
+        </div>
+        <div>
+            <div class="footer-title">SUPPORT</div>
+            <span>Contact Us</span>
+            <span>FAQs</span>
+            <span>Size Guide</span>
+            <span>Shipping & Returns</span>
+        </div>
+        <div>
+            <div class="footer-title">SHOP</div>
+            <span>Men's Shopping</span>
+            <span>Women's Shopping</span>
+            <span>Kids' Shopping</span>
+            <span>Discounts</span>
+        </div>
+        <div>
+            <div class="footer-title">COMPANY</div>
+            <span>Our Story</span>
+            <span>Careers</span>
+            <span>Terms & Conditions</span>
+            <span>Privacy & Cookie policy</span>
+        </div>
+        <div>
+            <div class="footer-title">CONTACT</div>
+            <address>
+                <span>1-202-555-0105</span>
+                <span>1-202-555-0106</span>
+                <span>help@shopper.com</span>
+            </address>
+        </div>
+   </footer>
+</body>
+</html>
